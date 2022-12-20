@@ -1,0 +1,94 @@
+.counter-container{
+    gap:5em;
+}
+
+.pomo-actions{
+    display: flex;
+    gap:2em;
+}
+
+.pomo-actions li{
+    border: medium none;
+margin: 0px;
+border-radius: 4px;
+font-size: 2rem;
+padding:1rem 3rem;
+cursor: pointer;
+background: rgba(0, 0, 0, 0.15);
+box-shadow: none;
+color: black;
+opacity: 1;
+font-weight: bold;
+}
+
+.pomo-actions li:hover{
+    color: white;
+    background-color:black; 
+}
+
+.time-container{
+    font-family:'cursed-timer';
+    font-size: 5rem;
+}
+
+#pomo-button{
+
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+}
+
+#pomo-button:hover{
+    color: white;
+    background-color:black; 
+}
+
+#snackbar {
+    font-family: 'Fira Code';
+    font-size:2rem;
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+      color: #fff; /* White text color */
+      text-align: center; /* Centered text */
+      border-radius: 2px; /* Rounded borders */
+      padding: 16px; /* Padding */
+      position: fixed; /* Sit on top of the screen */
+      z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+      bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbar.show {
+    visibility: visible; 
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+    
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+from {bottom: 0; opacity: 0;}
+to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+from {bottom: 30px; opacity: 1;}
+to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+from {bottom: 30px; opacity: 1;}
+to {bottom: 0; opacity: 0;}
+}

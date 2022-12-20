@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="counter.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="/index.html">
+                <header>Time Tools</header>
+            </a>
+            <ul class="nav-items">
+                <b>
+                    <li>Counter</li>
+                </b>
+                <a href="./pomodoro.html">
+                    <li>Pomodoro</li>
+                </a>
+
+                <li>StopWatch</li>
+            </ul>
+        </div>
+
+        <div class="counter-container">
+            <h1>COUNTER</h1>
+            <h3 id="counter-value">0</h3>
+            <div class="controls">
+                <button class="decrease">Decrease</button>
+                <button class="reset">Reset</button>
+                <button class="increase">Increase</button>
+            </div>
+        </div>
+        <!-- <canvas id="canvas"></canvas> -->
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="counter.js"></script>
+</body>
+
+</html>

@@ -14,7 +14,7 @@ const timerFlags = {
 
 const timerDurationInSeconds = {
     "pomodoro":1500,
-    "short break":10,
+    "short break":300,
     "long break":900
 }
 

@@ -112,12 +112,7 @@ function step() {
 
 function pomoButtonClickHandler(){
    timerFlags.startFlag = !timerFlags.startFlag
-   if(timerFlags.startFlag){
-    pomoButton.innerText = 'PAUSE';
-    }
-    else{
-        pomoButton.innerText = 'START';
-    }
+   timerFlags.startFlag ? pomoButton.innerText = 'PAUSE' : pomoButton.innerText = 'START';
 }
 
 function pomoResetHandler(){

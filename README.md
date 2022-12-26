@@ -1,5 +1,5 @@
 # time-tools
-A simple JavaScript app that provides counter, Pomodoro and Stop watch written in vanills JS
+A simple JavaScript app that provides counter, Pomodoro and Stop watch written in Vanilla JS
 
 # Counter
 ![Counter](/screenshots/counter_ss.png)

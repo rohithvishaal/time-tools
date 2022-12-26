@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="../navbar/nav-bar.css">
+    <link rel="stylesheet" href="../counter/counter.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="/index.html">
+                <header>Time Tools</header>
+            </a>
+            <ul class="nav-items">
+                <a href="../index.html">
+                    <li>Counter</li>
+                </a>
+                <a href="../pomodoro/pomodoro.html">
+                    <li>Pomodoro</li>
+                </a>
+                <b>
+                    <li>StopWatch</li>
+                </b>
+            </ul>
+        </div>
+
+        <div class="counter-container">
+            <div class="time-container">
+                00:00:00.00
+            </div>
+            <div class="controls">
+                <button class="start" id="timer-start">START</button>
+                <button class="reset" id="timer-reset">Reset</button>
+                <button class="flag" id="timer-flag">FLAG</button>
+            </div>
+            <div id="timestamp-container">
+
+            </div>
+        </div>
+        <!-- <canvas id="canvas"></canvas> -->
+        <div id="snackbar"></div>
+    </div>
+    <script type="module" src="stopwatch.js"></script>
+</body>
+
+</html>

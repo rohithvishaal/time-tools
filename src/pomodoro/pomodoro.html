@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="../navbar/nav-bar.css">
+    <link rel="stylesheet" href="../counter/counter.css">
+    <link rel="stylesheet" href="pomodoro.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="/index.html">
+                <header>Time Tools</header>
+            </a>
+            <ul class="nav-items">
+                <a href="../index.html">
+                    <li>Counter</li>
+                </a>
+                <b>
+                    <li>Pomodoro</li>
+                </b>
+                <a href="../stopwatch/stopwatch.html">
+                    <li>Stopwatch</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="counter-container">
+            <ul class="pomo-actions">
+                <li>Pomodoro</li>
+                <li>Short Break</li>
+                <li>Long Break</li>
+            </ul>
+            <div class="time-container">
+                25:00
+            </div>
+            <div class="controls">
+                <button class="start" id="pomo-button">START</button>
+                <button class="reset" id="pomo-reset">Reset</button>
+            </div>
+        </div>
+        <!-- <canvas id="canvas"></canvas> -->
+        <div id="snackbar"></div>
+    </div>
+    <script src="pomodoro.js"></script>
+</body>
+
+</html>

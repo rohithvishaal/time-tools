@@ -2,6 +2,6 @@ version: '3.0'
 services:
   rohvis-time-tools: 
     build: .
-    image: time-tools:1.0
+    image: time-tools:2.0
     ports:
       - 5500:5500

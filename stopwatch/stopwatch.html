@@ -8,8 +8,8 @@
     <title>Counter</title>
     <link rel="stylesheet" href="../navbar/nav-bar.css">
     <link rel="stylesheet" href="../counter/counter.css">
-    <link rel="stylesheet" href="pomodoro.css">
     <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="stopwatch.css">
 </head>
 
 <body>
@@ -22,33 +22,32 @@
                 <a href="../index.html">
                     <li>Counter</li>
                 </a>
-                <b>
+                <a href="../pomodoro/pomodoro.html">
                     <li>Pomodoro</li>
-                </b>
-                <a href="../stopwatch/stopwatch.html">
-                    <li>Stopwatch</li>
                 </a>
+                <b>
+                    <li>StopWatch</li>
+                </b>
             </ul>
         </div>
 
         <div class="counter-container">
-            <ul class="pomo-actions">
-                <li>Pomodoro</li>
-                <li>Short Break</li>
-                <li>Long Break</li>
-            </ul>
             <div class="time-container">
-                25:00
+                00:00:00.00
             </div>
             <div class="controls">
-                <button class="start" id="pomo-button">START</button>
-                <button class="reset" id="pomo-reset">Reset</button>
+                <button class="start" id="timer-start">START</button>
+                <button class="reset" id="timer-reset">Reset</button>
+                <button class="flag" id="timer-flag">FLAG</button>
+            </div>
+            <div id="timestamp-container">
+
             </div>
         </div>
         <!-- <canvas id="canvas"></canvas> -->
         <div id="snackbar"></div>
     </div>
-    <script src="pomodoro.js"></script>
+    <script type="module" src="stopwatch.js"></script>
 </body>
 
 </html>

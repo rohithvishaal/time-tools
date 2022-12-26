@@ -43,7 +43,7 @@ function setActiveMode(mode){
             if(modeNode.innerText.toLowerCase() === 'long break')
             body.style.backgroundColor = 'rgb(57, 112, 151)'
             if(modeNode.innerText.toLowerCase() === 'pomodoro')
-            body.style.backgroundColor = 'tomato'
+            body.style.backgroundColor = 'indianred'
 
         }
         else{
@@ -145,6 +145,7 @@ function pomoActionHandler(pomoAction){
 const pomoButton = document.getElementById('pomo-button')
 pomoButton.addEventListener('click', pomoButtonClickHandler)
 
+
 const pomoReset = document.getElementById('pomo-reset')
 pomoReset.addEventListener('click', pomoResetHandler)
 
@@ -156,3 +157,5 @@ pomoActions.forEach((pomoAction)=>{
 let init = document.querySelector('.time-container')
 init.innerText = fancyTimeFormat(getContext()[1])
 setActiveMode(getContext()[0])
+
+
